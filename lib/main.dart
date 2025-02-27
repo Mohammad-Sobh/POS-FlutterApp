@@ -18,7 +18,7 @@ class MyHttpOverrides extends HttpOverrides {
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   //temperory bypass sceurty
-  HttpOverrides.global = MyHttpOverrides();
+  //HttpOverrides.global = MyHttpOverrides();
   final appState = AppStateNotifier();
   await appState.initialize();
   runApp(
